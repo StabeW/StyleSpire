@@ -11,6 +11,14 @@ namespace StyleSpire.Data.Models
     {
         public override string Id { get; set; } = Guid.NewGuid().ToString();
 
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public Address BillingAddress { get; set; }
+
+        public Address DeliveryAddress { get; set; }
+
         // Audit info
         public DateTime CreatedOn { get; set; }
 
